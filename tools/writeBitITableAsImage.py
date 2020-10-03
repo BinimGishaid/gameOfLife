@@ -10,26 +10,10 @@ length, hight = 250, 250
 currentMetrix = [ [ 0 for i in range(length) ] for j in range(hight) ]
 preMetrix = [ [ 0 for i in range(length) ] for j in range(hight) ]
 
-#preMetrix[5][5] = 1
-#preMetrix[5][6] = 1
-#preMetrix[5][7] = 1
-#preMetrix[4][5] = 1
-#preMetrix[5][6] = 1
-#preMetrix[4][7] = 1
-#preMetrix[5][5] = 1
-#preMetrix[4][4] = 1
-#preMetrix[4][7] = 1
-#preMetrix[4][3] = 1
-#preMetrix[5][6] = 1
-#preMetrix[3][6] = 1
-
-
 
 
 image = np.zeros((hight,length,3), np.uint8)
-#image[5,5] = (200,200,200)
-#image[5,6] = (200,200,200)
-#image[5,7] = (200,200,200)
+
 
 for i in range(2, len(preMetrix)-2):
         for j in range(2, len(preMetrix[i])-2):
@@ -64,7 +48,7 @@ for x in range(0, 400):
             currentMetrix[i][j] = 0
             if((preMetrix[i][j]) == 1 and num == 2) or (preMetrix[i][j] == 0 and num == 3):
                 currentMetrix[i][j] = 1
-                image[i,j] = (200,200,200)
+                image[i,j] = (200,20,200)
             else:
                 image[i,j] = (0,0,0)
 
