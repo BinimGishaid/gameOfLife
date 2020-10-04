@@ -23,20 +23,6 @@ for i in range(0, len(preMetrix)):
                 if preMetrix[i][j] == 1:
                     image[i,j] = (150,30,200)
 
-for i in range(0, len(preMetrix)):
-        for j in range(0, len(preMetrix[i])):
-                life = random.choice([0, 1])
-                if life == 0:
-                    preMetrix[i][j] = 0
-                    image[i,j] = (0,0,0)
-
-for i in range(0, len(preMetrix)):
-        for j in range(0, len(preMetrix[i])):
-                life = random.choice([0, 1])
-                if life == 0:
-                    preMetrix[i][j] = 0
-                    image[i,j] = (0,0,0)
-
 
 cv2.imshow('image',image)
 cv2.waitKey(500)
