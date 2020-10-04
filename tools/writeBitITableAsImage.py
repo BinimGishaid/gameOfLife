@@ -42,7 +42,7 @@ for i in range(0, len(preMetrix)):
             preMetrix[i][j] = 1
 
 
-for x in range(0, 500):
+for x in range(0, 5000):
     for i in range(1, len(preMetrix)-1):
         for j in range(1, len(preMetrix[i])-1):
             num = 0
@@ -110,6 +110,6 @@ for x in range(0, 500):
 
     #cv2.imshow('image',image)
 
-    cv2.waitKey(10)
+    cv2.waitKey(100)
 
 
